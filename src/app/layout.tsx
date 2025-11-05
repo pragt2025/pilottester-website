@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Launchpad',
-  description: 'The ultimate platform to launch your projects.',
+  title: 'Pilot Testers',
+  description: 'The platform to connect with early adopters and beta testers.',
 };
 
 export default function RootLayout({

@@ -4,29 +4,29 @@ import { Check } from "lucide-react";
 
 const pricingPlans = [
   {
-    name: "Starter",
-    price: "$0",
-    period: "/month",
-    description: "For individuals and small projects.",
-    features: ["1 Project", "Basic Analytics", "Community Support"],
-    cta: "Start for Free",
+    name: "Tester",
+    price: "Free",
+    period: "",
+    description: "For individuals who want to test apps and earn rewards.",
+    features: ["Access to exclusive betas", "Earn rewards for feedback", "Shape new products", "Community access"],
+    cta: "Become a Tester",
     isPrimary: false,
   },
   {
-    name: "Pro",
-    price: "$29",
-    period: "/month",
-    description: "For growing teams and businesses.",
-    features: ["10 Projects", "Advanced Analytics", "Priority Email Support", "Team Collaboration"],
-    cta: "Choose Pro",
+    name: "Developer",
+    price: "$49",
+    period: "/project",
+    description: "For indie developers and startups.",
+    features: ["Up to 25 testers", "Detailed feedback reports", "Real device testing", "Email Support"],
+    cta: "Start a Project",
     isPrimary: true,
   },
   {
-    name: "Enterprise",
+    name: "Business",
     price: "Custom",
     period: "",
-    description: "For large organizations with custom needs.",
-    features: ["Unlimited Projects", "Custom Integrations", "Dedicated Account Manager", "24/7 Support"],
+    description: "For large teams and enterprises.",
+    features: ["Unlimited testers", "Managed testing cycles", "Dedicated Account Manager", "API Access & Integrations"],
     cta: "Contact Us",
     isPrimary: false,
   },
@@ -41,7 +41,7 @@ export function Pricing() {
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Pricing Plans</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Find the Perfect Plan</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Choose the plan that's right for you. All plans come with a 14-day free trial.
+              Simple, transparent pricing for every need. Get started today.
             </p>
           </div>
         </div>

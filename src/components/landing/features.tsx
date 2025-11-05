@@ -1,26 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Rocket, Server, BarChart3, Users } from "lucide-react";
+import { Users, FileText, Smartphone, DollarSign } from "lucide-react";
 
 const features = [
   {
-    icon: <Rocket className="w-10 h-10 text-primary" />,
-    title: "Rapid Deployment",
-    description: "Deploy your applications in seconds, not hours. Our streamlined process gets you to market faster.",
-  },
-  {
-    icon: <Server className="w-10 h-10 text-primary" />,
-    title: "Scalable Infrastructure",
-    description: "From a small project to a large-scale enterprise, our infrastructure scales with your needs.",
-  },
-  {
-    icon: <BarChart3 className="w-10 h-10 text-primary" />,
-    title: "Analytics & Insights",
-    description: "Gain valuable insights into your application's performance with our built-in analytics dashboard.",
-  },
-  {
     icon: <Users className="w-10 h-10 text-primary" />,
-    title: "Team Collaboration",
-    description: "Work together with your team seamlessly. Manage permissions and collaborate on projects with ease.",
+    title: "Diverse Tester Pool",
+    description: "Access a global community of testers from various backgrounds and demographics to get diverse feedback.",
+  },
+  {
+    icon: <FileText className="w-10 h-10 text-primary" />,
+    title: "Detailed Feedback",
+    description: "Receive structured bug reports, usability feedback, and detailed suggestions to improve your product.",
+  },
+  {
+    icon: <Smartphone className="w-10 h-10 text-primary" />,
+    title: "Real-Device Testing",
+    description: "Get your app tested on a wide range of real devices to ensure compatibility and performance.",
+  },
+  {
+    icon: <DollarSign className="w-10 h-10 text-primary" />,
+    title: "Earn Rewards",
+    description: "As a tester, get rewarded for your time and effort by helping shape the future of new apps.",
   },
 ];
 
@@ -30,10 +30,10 @@ export function Features() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Core Features</div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Everything You Need to Succeed</h2>
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">How It Works</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">A Platform for Developers and Testers</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Launchpad provides a comprehensive suite of tools to help you launch and grow your digital products.
+              Whether you're looking to improve your app or want to test new products, Pilot Testers has you covered.
             </p>
           </div>
         </div>

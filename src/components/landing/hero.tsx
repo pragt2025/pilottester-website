@@ -21,17 +21,17 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Launch Your Next Big Idea with Launchpad
+            Get Quality Feedback from Real Users
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            The ultimate platform to build, manage, and scale your applications seamlessly. Focus on your code, we'll handle the rest.
+            Pilot Testers connects you with a community of passionate testers to improve your app before launch.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="#pricing">Get Started</Link>
+              <Link href="#pricing">Find Testers</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
-              <Link href="#features">Learn More</Link>
+              <Link href="#features">Become a Tester</Link>
             </Button>
           </div>
         </div>

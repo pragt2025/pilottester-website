@@ -7,20 +7,20 @@ const testimonials = [
   {
     id: 'testimonial-1',
     name: "Sarah Doe",
-    title: "CEO, Innovate Inc.",
-    quote: "Launchpad has been a game-changer for our team. The ability to deploy and manage our applications so easily has boosted our productivity by 50%. Highly recommended!",
+    title: "Indie Developer",
+    quote: "Pilot Testers was invaluable for my app launch. I received high-quality, actionable feedback from real users within days. It helped me catch critical bugs I would have otherwise missed.",
   },
   {
     id: 'testimonial-2',
     name: "John Smith",
-    title: "Lead Developer, Tech Solutions",
-    quote: "I've used many platforms, but Launchpad stands out for its simplicity and power. The developer experience is second to none.",
+    title: "Passionate Tester",
+    quote: "I love being able to test new apps before they're released. It's exciting to help developers and see my feedback make a real impact on the final product. Plus, the rewards are great!",
   },
   {
     id: 'testimonial-3',
     name: "Jane Roe",
-    title: "Founder, Creative Co.",
-    quote: "As a non-technical founder, Launchpad gave me the confidence to manage my app's backend without a steep learning curve. It's incredibly intuitive!",
+    title: "Product Manager, Tech Startup",
+    quote: "The diversity of the tester community on Pilot Testers is amazing. We got insights from users on different devices and with different tech skills, which was crucial for our product's success.",
   },
 ];
 
@@ -33,9 +33,9 @@ export function Testimonials() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Testimonials</div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Users Say</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Community Says</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Hear from satisfied customers who have transformed their workflow with Launchpad.
+              Hear from developers and testers who are part of the Pilot Testers community.
             </p>
           </div>
         </div>

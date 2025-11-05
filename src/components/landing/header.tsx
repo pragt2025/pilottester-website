@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Rocket } from "lucide-react";
+import { Menu, Plane } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#features", label: "For Developers" },
+  { href: "#testimonials", label: "For Testers" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#ai-mockups", label: "AI Mockups" },
 ];
 
 export function Header() {
@@ -16,9 +15,9 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Rocket className="h-6 w-6 text-primary" />
+            <Plane className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block">
-              Launchpad
+              Pilot Testers
             </span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
@@ -45,8 +44,8 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
-                  <Rocket className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Launchpad</span>
+                  <Plane className="h-6 w-6 text-primary" />
+                  <span className="font-bold">Pilot Testers</span>
                 </Link>
                 <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                   <div className="flex flex-col space-y-3">
@@ -61,7 +60,8 @@ export function Header() {
             </Sheet>
           </div>
 
-          <nav className="flex items-center">
+          <nav className="flex items-center gap-2">
+            <Button variant="ghost">Log In</Button>
             <Button>Sign Up</Button>
           </nav>
         </div>
