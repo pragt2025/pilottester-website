@@ -13,14 +13,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="flex-1 md:flex-none">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Plane className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block">
+            <Plane className="h-6 w-6 text-primary md:h-6 md:w-6" />
+            <span className="font-bold sm:inline-block">
               Pilot Testers
             </span>
           </Link>
-          <nav className="flex items-center gap-6 text-sm">
+        </div>
+
+        <nav className="hidden items-center gap-6 text-sm md:flex flex-1 ml-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -30,10 +32,9 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-          </nav>
-        </div>
+        </nav>
 
-        <div className="flex flex-1 items-center justify-start md:justify-end">
+        <div className="flex items-center justify-end flex-1 md:flex-none">
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
@@ -60,7 +61,7 @@ export function Header() {
             </Sheet>
           </div>
 
-          <nav className="flex items-center gap-2">
+          <nav className="hidden md:flex items-center gap-2">
             <Button variant="ghost">Log In</Button>
             <Button>Sign Up</Button>
           </nav>
