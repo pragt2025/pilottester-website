@@ -12,14 +12,14 @@ export function Hero() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="flex flex-col justify-center space-y-4">
             <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Ship Better Apps, Faster.
+              Get your app tested by the right people
             </h1>
             <p className="max-w-[600px] text-lg md:text-xl text-muted-foreground">
-              Pilot Testers is the ultimate platform to connect with dedicated beta testers. Get invaluable feedback, find bugs, and improve your product before you launch.
+              Receive detailed feedback from real people and improve your product before launch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
-                <Link href="#pricing">Get Started for Free</Link>
+                <Link href="#pricing">Get Started</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link href="#features">Become a Tester</Link>

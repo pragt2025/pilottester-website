@@ -15,7 +15,6 @@ export default function Page() {
         <Hero />
         <Features />
         <Testimonials />
-        <Pricing />
         <MockupGenerator />
         <Cta />
       </main>

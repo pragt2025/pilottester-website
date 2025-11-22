@@ -8,9 +8,11 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center space-x-2">
             <Plane className="h-6 w-6 text-primary" />
-            <span className="font-bold">Pilot Testers</span>
+            <span className="font-bold">Testers' Community</span>
           </div>
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-muted-foreground">
+            <Link href="#" className="hover:text-foreground transition-colors">For Companies</Link>
+            <Link href="#" className="hover:text-foreground transition-colors">For Testers</Link>
             <Link href="#" className="hover:text-foreground transition-colors">About Us</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Contact</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
@@ -26,7 +28,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Pilot Testers. All rights reserved.
+          © {new Date().getFullYear()} Testers' Community. All rights reserved.
         </div>
       </div>
     </footer>
