@@ -63,17 +63,17 @@ export function MockupGenerator() {
   };
 
   return (
-    <section id="ai-mockups" className="py-12 md:py-24 lg:py-32 bg-card">
+    <section id="ai-mockups" className="py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-2 mb-12">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">AI Mockup Generator</div>
+            <div className="inline-block rounded-lg bg-primary/10 text-primary px-3 py-1 text-sm font-medium">AI Mockup Generator</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Visualize Your Vision</h2>
             <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Use our generative AI to create stunning device mockups for your landing page concept. See your ideas come to life on various screen sizes instantly.
             </p>
         </div>
 
-        <Card className="max-w-4xl mx-auto shadow-lg">
+        <Card className="max-w-4xl mx-auto shadow-lg border-border/50">
           <CardHeader>
             <CardTitle>Generate Device Mockups</CardTitle>
             <CardDescription>Describe your app or website and let AI create mockups for you.</CardDescription>
@@ -138,7 +138,7 @@ export function MockupGenerator() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" disabled={isLoading} className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
                   {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                   Generate Mockups
                 </Button>

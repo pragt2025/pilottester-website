@@ -26,11 +26,11 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-12 md:py-24 lg:py-32 bg-card">
+    <section id="features" className="py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">How It Works</div>
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-primary-foreground bg-primary">How It Works</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">A Platform for Developers and Testers</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Whether you're looking to improve your app or want to test new products, Pilot Testers has you covered.
@@ -39,7 +39,7 @@ export function Features() {
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-4 mt-12">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
+            <Card key={feature.title} className="text-center h-full flex flex-col hover:shadow-lg transition-shadow duration-300 border-0 bg-transparent shadow-none">
               <CardHeader className="items-center">
                 {feature.icon}
                 <CardTitle className="mt-4">{feature.title}</CardTitle>
