@@ -19,19 +19,19 @@ export function Header() {
             Pilot Testers
           </span>
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-           <div className="hidden md:flex items-center space-x-2">
+        <div className="flex flex-1 items-center justify-end gap-4">
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-foreground/80 text-foreground/60"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost">Log In</Button>
             <Button>Sign Up</Button>
           </div>
