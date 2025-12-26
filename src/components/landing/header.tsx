@@ -4,67 +4,78 @@ import { Menu, Plane } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#features", label: "For Developers" },
-  { href: "#testimonials", label: "For Testers" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/how-it-works", label: "How It Works" },
+  { href: "/#features", label: "For Companies" },
+  { href: "/#testimonials", label: "For Testers" },
+  { href: "/#pricing", label: "About Us" },
 ];
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="flex-1 md:flex-none">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Plane className="h-6 w-6 text-primary md:h-6 md:w-6" />
-            <span className="font-bold sm:inline-block">
-              Pilot Testers
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="w-full px-4 md:px-6">
+        <div className="flex h-16 items-center">
+          <Link href="/" className="flex items-center gap-2 mr-4">
+            <Plane className="h-6 w-6 text-primary" />
+            <span className="font-bold text-lg">
+              Testers' Community
             </span>
           </Link>
-        </div>
-
-        <nav className="hidden items-center gap-6 text-sm md:flex flex-1 ml-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition-colors hover:text-foreground/80 text-foreground/60"
-              >
-                {link.label}
-              </Link>
-            ))}
-        </nav>
-
-        <div className="flex items-center justify-end flex-1 md:flex-none">
-          <div className="md:hidden">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle Menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left" className="pr-0">
-                <Link href="/" className="mr-6 flex items-center space-x-2">
-                  <Plane className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Pilot Testers</span>
+          
+          <div className="hidden md:flex flex-1 items-center justify-end gap-6">
+            <nav className="flex items-center gap-6 text-sm font-medium">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="transition-colors hover:text-foreground/80 text-foreground/60"
+                >
+                  {link.label}
                 </Link>
-                <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-                  <div className="flex flex-col space-y-3">
-                    {navLinks.map((link) => (
-                      <Link key={link.href} href={link.href} className="text-foreground">
-                        {link.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+              ))}
+            </nav>
+            <div className="flex items-center gap-2">
+              <Button variant="ghost">Log In</Button>
+              <Button>Sign Up</Button>
+            </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-2">
-            <Button variant="ghost">Log In</Button>
-            <Button>Sign Up</Button>
-          </nav>
+          <div className="flex flex-1 justify-end md:hidden">
+              <Sheet>
+                  <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                      <Menu className="h-5 w-5" />
+                      <span className="sr-only">Toggle Menu</span>
+                  </Button>
+                  </SheetTrigger>
+                  <SheetContent side="right">
+                      <div className="flex flex-col h-full">
+                      <nav className="grid gap-6 text-lg font-medium mt-6">
+                          <Link
+                          href="/"
+                          className="flex items-center gap-2 text-lg font-semibold mb-4"
+                          >
+                          <Plane className="h-6 w-6 text-primary" />
+                          <span>Testers' Community</span>
+                          </Link>
+                          {navLinks.map((link) => (
+                          <Link
+                              key={link.href}
+                              href={link.href}
+                              className="text-muted-foreground transition-colors hover:text-foreground"
+                          >
+                              {link.label}
+                          </Link>
+                          ))}
+                      </nav>
+                      <div className="mt-auto flex flex-col space-y-2">
+                          <Button variant="ghost">Log In</Button>
+                          <Button>Sign Up</Button>
+                      </div>
+                  </div>
+                  </SheetContent>
+              </Sheet>
+          </div>
         </div>
       </div>
     </header>
