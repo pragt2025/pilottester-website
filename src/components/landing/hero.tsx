@@ -4,43 +4,44 @@ import Link from "next/link";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-dashboard');
 
   return (
-    <section className="w-full py-20 md:py-32 lg:py-40 bg-background">
+    <section className="relative w-full pt-20 md:pt-32 lg:pt-40 bg-[#6E3AFF] text-white">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="flex flex-col justify-center space-y-4">
-            <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Get your app tested by the right people
+          <div className="flex flex-col justify-center space-y-6">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              14 Days. Real Testers. Ready To Publish
             </h1>
-            <p className="max-w-[600px] text-lg md:text-xl text-muted-foreground">
-              Receive detailed feedback from real people and improve your product before launch.
+            <p className="max-w-[600px] text-lg md:text-xl text-primary-foreground/80">
+              Connect with real developers to variable Google Play's 14-day testing requirement and move to production with confidence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg">
+            <div className="flex flex-col sm:flex-row items-start gap-4">
+              <Button asChild size="lg" variant="accent" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Link href="#pricing">Get Started</Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="#features">Become a Tester</Link>
-              </Button>
+              <Link href="#" className="inline-block">
+                <Image src="/google-play-badge.png" alt="Download on Google Play" width={160} height={48} />
+              </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="hidden lg:flex items-center justify-center">
             {heroImage && (
                 <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-xl object-cover shadow-2xl"
+                width={400}
+                height={700}
+                className="rounded-t-xl object-contain object-top shadow-2xl"
                 priority
                 />
             )}
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-background" style={{ clipPath: 'ellipse(100% 55% at 50% 100%)' }}></div>
     </section>
   );
 }

@@ -1,10 +1,10 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "A developer presenting an app on a screen to a group of engaged testers.",
-      "imageUrl": "https://images.unsplash.com/photo-1760546465497-d9319a137fe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZXZlbG9wZXIlMjBwcmVzZW50YXRpb258ZW58MHx8fHwxNzYzODAzMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "developer presentation"
+      "id": "hero-dashboard",
+      "description": "A mobile app dashboard for a tester platform, showing statistics and recent applications.",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/pilot-tester-dashboard.png",
+      "imageHint": "app dashboard"
     },
     {
       "id": "testimonial-1",

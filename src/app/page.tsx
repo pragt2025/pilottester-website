@@ -1,11 +1,9 @@
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { Features } from "@/components/landing/features";
-import { Testimonials } from "@/components/landing/testimonials";
-import { Pricing } from "@/components/landing/pricing";
-import { Cta } from "@/components/landing/cta";
+import { HowItWorks } from "@/components/landing/how-it-works";
+import { Stats } from "@/components/landing/stats";
 import { Footer } from "@/components/landing/footer";
-import { MockupGenerator } from "@/components/landing/mockup-generator";
 
 export default function Page() {
   return (
@@ -14,9 +12,8 @@ export default function Page() {
       <main className="flex-1">
         <Hero />
         <Features />
-        <Testimonials />
-        <MockupGenerator />
-        <Cta />
+        <HowItWorks />
+        <Stats />
       </main>
       <Footer />
     </div>
