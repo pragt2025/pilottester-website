@@ -31,12 +31,15 @@ export function Footer() {
                 Terms of Service
               </Link>
             </nav>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
                 <Link href="#" aria-label="Twitter">
                     <Twitter className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
                 </Link>
                 <Link href="#" aria-label="LinkedIn">
                     <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
+                </Link>
+                <Link href="#" className="inline-flex items-center">
+                  <Image src="https://res.cloudinary.com/doqakk4b7/image/upload/v1766983070/Play_Store_vobsl0.png" alt="Download on Google Play" width={130} height={40} />
                 </Link>
             </div>
         </div>
