@@ -27,7 +27,7 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="hidden lg:flex items-end justify-center">
             {heroImage && (
                 <Image
                 src={heroImage.imageUrl}
@@ -35,7 +35,7 @@ export function Hero() {
                 data-ai-hint={heroImage.imageHint}
                 width={400}
                 height={700}
-                className="rounded-t-xl object-contain object-top shadow-2xl"
+                className="rounded-t-xl object-contain object-bottom shadow-2xl"
                 priority
                 />
             )}
