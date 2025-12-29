@@ -6,7 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#", label: "Pilot Tester" },
+  { href: "#", label: "Pilot Testers" },
 ];
 
 export function Header() {
@@ -16,7 +16,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 mr-4">
           <Rocket className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">
-            Pilot Tester
+            Pilot Testers
           </span>
         </Link>
         
@@ -54,7 +54,7 @@ export function Header() {
                         className="flex items-center gap-2 text-lg font-semibold mb-4"
                         >
                         <Rocket className="h-6 w-6 text-primary" />
-                        <span>Pilot Tester</span>
+                        <span>Pilot Testers</span>
                         </Link>
                         {navLinks.map((link) => (
                         <Link

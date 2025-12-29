@@ -22,7 +22,7 @@ const testimonials = [
     id: 'testimonial-3',
     name: "Sarah Johnson",
     title: "Indie Developer",
-    quote: "Pilot Tester was a game-changer for my app launch. The feedback was invaluable and the process was incredibly smooth. Highly recommended!",
+    quote: "Pilot Testers was a game-changer for my app launch. The feedback was invaluable and the process was incredibly smooth. Highly recommended!",
   },
   {
     id: 'testimonial-4',

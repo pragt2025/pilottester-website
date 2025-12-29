@@ -33,8 +33,8 @@ export function Hero() {
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
-                width={400}
-                height={600}
+                width={300}
+                height={400}
                 className="rounded-t-xl object-contain shadow-2xl"
                 priority
                 />
