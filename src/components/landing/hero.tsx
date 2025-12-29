@@ -27,15 +27,15 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:flex items-end justify-center">
+          <div className="hidden lg:flex items-center justify-center">
             {heroImage && (
                 <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
                 width={400}
-                height={650}
-                className="rounded-t-xl object-contain object-bottom shadow-2xl"
+                height={600}
+                className="rounded-t-xl object-contain shadow-2xl"
                 priority
                 />
             )}
