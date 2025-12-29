@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Rocket } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "../theme-toggle";
 
 const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
@@ -33,6 +34,7 @@ export function Header() {
             ))}
           </nav>
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Button variant="ghost">Login</Button>
             <Button>Sign Up</Button>
           </div>
@@ -67,6 +69,9 @@ export function Header() {
                         ))}
                     </nav>
                     <div className="mt-auto flex flex-col space-y-2">
+                        <div className="flex justify-center mb-4">
+                          <ThemeToggle />
+                        </div>
                         <Button variant="ghost">Login</Button>
                         <Button>Sign Up</Button>
                     </div>
