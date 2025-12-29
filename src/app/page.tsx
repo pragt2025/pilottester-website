@@ -3,7 +3,11 @@ import { Hero } from "@/components/landing/hero";
 import { Features } from "@/components/landing/features";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Stats } from "@/components/landing/stats";
+import { Testimonials } from "@/components/landing/testimonials";
+import { Cta } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
+import { MockupGenerator } from "@/components/landing/mockup-generator";
+import { Pricing } from "@/components/landing/pricing";
 
 export default function Page() {
   return (
@@ -14,6 +18,10 @@ export default function Page() {
         <Features />
         <HowItWorks />
         <Stats />
+        <Testimonials />
+        <Pricing />
+        <MockupGenerator />
+        <Cta />
       </main>
       <Footer />
     </div>
