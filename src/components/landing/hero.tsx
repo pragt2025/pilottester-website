@@ -41,7 +41,11 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-background" style={{ clipPath: 'ellipse(100% 55% at 50% 100%)' }}></div>
+      <div className="absolute bottom-0 left-0 w-full leading-[0]">
+        <svg viewBox="0 0 1440 112" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 64.2857C360 142.857 720 0 1440 64.2857V112H0V64.2857Z" fill="hsl(var(--background))"></path>
+        </svg>
+      </div>
     </section>
   );
 }
