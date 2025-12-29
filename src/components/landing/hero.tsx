@@ -1,3 +1,4 @@
+'use client';
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +23,7 @@ export function Hero() {
                 <Link href="#pricing">Get Started</Link>
               </Button>
               <Link href="#" className="inline-block">
-                <Image src="/google-play-badge.png" alt="Download on Google Play" width={160} height={48} />
+                <Image src="https://res.cloudinary.com/doqakk4b7/image/upload/v1766982812/Play_Store_pw894g.jpg" alt="Download on Google Play" width={160} height={48} />
               </Link>
             </div>
           </div>
