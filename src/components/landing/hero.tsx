@@ -34,7 +34,7 @@ export function Hero() {
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
                 width={400}
-                height={700}
+                height={650}
                 className="rounded-t-xl object-contain object-bottom shadow-2xl"
                 priority
                 />
