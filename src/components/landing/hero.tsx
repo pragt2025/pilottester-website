@@ -18,12 +18,12 @@ export function Hero() {
             <p className="max-w-[600px] text-lg md:text-xl text-primary-foreground/80">
               Connect with real developers to variable Google Play's 14-day testing requirement and move to production with confidence.
             </p>
-            <div className="flex flex-col sm:flex-row items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <Button asChild size="lg" variant="accent" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Link href="#pricing">Get Started</Link>
               </Button>
-              <Link href="#" className="inline-block">
-                <Image src="https://res.cloudinary.com/doqakk4b7/image/upload/v1766983070/Play_Store_vobsl0.png" alt="Download on Google Play" width={160} height={48} />
+              <Link href="#" className="inline-flex items-center">
+                <Image src="https://res.cloudinary.com/doqakk4b7/image/upload/v1766983070/Play_Store_vobsl0.png" alt="Download on Google Play" width={160} height={48} className="h-11 w-auto" />
               </Link>
             </div>
           </div>
