@@ -8,6 +8,7 @@ import { Cta } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 import { Pricing } from "@/components/landing/pricing";
 import { Faq } from "@/components/landing/faq";
+import { Community } from "@/components/landing/community";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <main className="flex-1">
         <Hero />
         <Features />
+        <Community />
         <HowItWorks />
         <Stats />
         <Testimonials />
