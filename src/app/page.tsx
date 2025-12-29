@@ -7,6 +7,7 @@ import { Testimonials } from "@/components/landing/testimonials";
 import { Cta } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 import { Pricing } from "@/components/landing/pricing";
+import { Faq } from "@/components/landing/faq";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
         <Stats />
         <Testimonials />
         <Pricing />
+        <Faq />
         <Cta />
       </main>
       <Footer />

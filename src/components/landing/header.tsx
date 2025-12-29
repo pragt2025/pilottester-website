@@ -7,7 +7,7 @@ import { ThemeToggle } from "../theme-toggle";
 const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#", label: "Pilot Testers" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 export function Header() {
