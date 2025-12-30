@@ -17,11 +17,11 @@ export default function Page() {
       <main className="flex-1">
         <Hero />
         <Features />
-        <Community />
         <HowItWorks />
         <Stats />
         <Testimonials />
         <Pricing />
+        <Community />
         <Faq />
         <Cta />
       </main>
