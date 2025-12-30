@@ -9,6 +9,7 @@ import { Footer } from "@/components/landing/footer";
 import { Pricing } from "@/components/landing/pricing";
 import { Faq } from "@/components/landing/faq";
 import { Community } from "@/components/landing/community";
+import { Contact } from "@/components/landing/contact";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
         <Pricing />
         <Community />
         <Faq />
+        <Contact />
         <Cta />
       </main>
       <Footer />
