@@ -1,28 +1,52 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "A group of diverse people collaborating and using devices.",
-      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjIzMzk1NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "people collaborating"
+      "id": "hero-dashboard",
+      "description": "A mobile app dashboard for a tester platform, showing statistics and recent applications.",
+      "imageUrl": "https://res.cloudinary.com/doqakk4b7/image/upload/v1766981908/Mobile_Dashboard_nsbbm0.jpg",
+      "imageHint": "app dashboard"
+    },
+    {
+      "id": "community-app-screenshot",
+      "description": "Screenshot of the community app showing a list of apps to test.",
+      "imageUrl": "https://res.cloudinary.com/doqakk4b7/image/upload/v1767048862/Mobile_Dashboard_1_ciiulc.jpg",
+      "imageHint": "app screen"
     },
     {
       "id": "testimonial-1",
-      "description": "Avatar for Sarah Doe",
-      "imageUrl": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjMzOTU2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "testimonial-2",
-      "description": "Avatar for John Smith",
-      "imageUrl": "https://images.unsplash.com/photo-1607031542107-f6f46b5d54e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIzMzEzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for Sultan Haider",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY4ODE2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
+      "id": "testimonial-2",
+      "description": "Avatar for Brian Edison",
+      "imageUrl": "https://images.unsplash.com/photo-1698510047345-ff32de8a3b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBmYWNlfGVufDB8fHx8MTc2Njk4MDk4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man face"
+    },
+    {
       "id": "testimonial-3",
-      "description": "Avatar for Jane Roe",
-      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHByb2ZpbGV8ZW58MHx8fHwxNzYyMjk2NjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for Sarah Johnson",
+      "imageUrl": "https://images.unsplash.com/photo-1521252659862-eec69941b071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHByb2ZpbGV8ZW58MHx8fHwxNzY2OTgxNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman profile"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Avatar for Michael Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFufGVufDB8fDB8fHww",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Avatar for Emily Rodriguez",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tYW58ZW58MHx8MHx8fDA%3D",
+      "imageHint": "woman face"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Avatar for David Lee",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "imageHint": "man portrait"
     }
   ]
 }

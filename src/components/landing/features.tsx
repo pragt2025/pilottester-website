@@ -1,51 +1,50 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, FileText, Smartphone, DollarSign } from "lucide-react";
+import { TestTube, Shuffle, Star, TrendingUp } from "lucide-react";
 
 const features = [
   {
-    icon: <Users className="w-10 h-10 text-primary" />,
-    title: "Diverse Tester Pool",
-    description: "Access a global community of testers from various backgrounds and demographics to get diverse feedback.",
+    icon: <TestTube className="w-8 h-8 text-primary" />,
+    title: "Test to Earn",
+    description: "Earn virtual credits by participating in tests for fellow developers. Use your accumulated balance to launch and list your own app for testing.",
   },
   {
-    icon: <FileText className="w-10 h-10 text-primary" />,
-    title: "Detailed Feedback",
-    description: "Receive structured bug reports, usability feedback, and detailed suggestions to improve your product.",
+    icon: <Shuffle className="w-8 h-8 text-primary" />,
+    title: "Automatic Matching",
+    description: "Get matched with a community of 12-20 genuine testers instantly. Effortlessly satisfy the 12-tester requirement for personal developer accounts.",
   },
   {
-    icon: <Smartphone className="w-10 h-10 text-primary" />,
-    title: "Real-Device Testing",
-    description: "Get your app tested on a wide range of real devices to ensure compatibility and performance.",
+    icon: <Star className="w-8 h-8 text-primary" />,
+    title: "Actionable Feedback",
+    description: "Receive structured bug reports and usability notes from real users. Improve your app's quality before it reaches the production stage.",
   },
   {
-    icon: <DollarSign className="w-10 h-10 text-primary" />,
-    title: "Earn Rewards",
-    description: "As a tester, get rewarded for your time and effort by helping shape the future of new apps.",
+    icon: <TrendingUp className="w-8 h-8 text-primary" />,
+    title: "Live Progress Tracking",
+    description: "Monitor your 14-day continuous testing progress via a real-time dashboard. Stay informed on tester activity and test days elapsed at a glance.",
   },
 ];
 
 export function Features() {
   return (
-    <section id="features" className="py-12 md:py-24 lg:py-32 bg-card">
+    <section id="features" className="py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">How It Works</div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">A Platform for Developers and Testers</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Whether you're looking to improve your app or want to test new products, Pilot Testers has you covered.
-            </p>
+          <div className="space-y-3">
+            <div className="inline-block rounded-lg bg-accent/10 text-accent px-3 py-1 text-sm font-medium">FOR DEVELOPERS</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Testing And Feedback, Made Simple</h2>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-4 mt-12">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="items-center">
-                {feature.icon}
-                <CardTitle className="mt-4">{feature.title}</CardTitle>
+            <Card key={feature.title} className="text-left h-full flex flex-col border-0 bg-transparent shadow-none p-4">
+              <CardHeader className="p-0">
+                <div className="bg-primary/10 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                    {feature.icon}
+                </div>
+                <CardTitle className="mt-2 text-lg font-semibold">{feature.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{feature.description}</p>
+              <CardContent className="p-0 mt-2">
+                <p className="text-muted-foreground text-sm">{feature.description}</p>
               </CardContent>
             </Card>
           ))}

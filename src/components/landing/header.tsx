@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Plane } from "lucide-react";
+import { Menu, Rocket } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "../theme-toggle";
 
 const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
