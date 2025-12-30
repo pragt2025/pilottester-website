@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeSuggestPopup } from '@/components/theme-suggest-popup';
 
 export const metadata: Metadata = {
   title: 'Pilot Testers',
@@ -29,6 +30,7 @@ export default function RootLayout({
         >
           {children}
           <Toaster />
+          <ThemeSuggestPopup />
         </ThemeProvider>
       </body>
     </html>
