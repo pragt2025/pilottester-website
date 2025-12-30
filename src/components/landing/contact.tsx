@@ -27,8 +27,8 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <a href="mailto:support@pilottesters.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      support@pilottesters.com
+                    <a href="mailto:info@sparkbrainai.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      info@sparkbrainai.com
                     </a>
                   </div>
                 </div>
@@ -38,7 +38,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-muted-foreground">(123) 456-7890</p>
+                    <p className="text-muted-foreground">+977 984 111 2003</p>
                   </div>
                 </div>
               </div>
