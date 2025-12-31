@@ -2,6 +2,8 @@
 /**
  * @fileOverview A flow for sending a contact form email using SendGrid.
  */
+import { config } from 'dotenv';
+config();
 
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
