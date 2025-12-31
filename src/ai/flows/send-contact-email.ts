@@ -7,14 +7,14 @@ import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import sgMail from '@sendgrid/mail';
 
-export const ContactFormSchema = z.object({
+const ContactFormSchema = z.object({
   name: z.string().describe('The name of the person sending the message.'),
   email: z.string().email().describe('The email address of the sender.'),
   subject: z.string().describe('The subject of the message.'),
   message: z.string().describe('The content of the message.'),
 });
 
-export type ContactFormData = z.infer<typeof ContactFormSchema>;
+type ContactFormData = z.infer<typeof ContactFormSchema>;
 
 export async function sendContactEmail(
   input: ContactFormData
@@ -53,7 +53,7 @@ const sendContactEmailFlow = ai.defineFlow(
       to: process.env.SENDGRID_TO_EMAIL,
       from: {
         name: 'Pilot Testers Contact Form',
-        email: 'noreply@pilottesters.dev', // Use a verified sender email in your SendGrid account
+        email: 'noreply@sparkbrainai.com', // Use a verified sender email in your SendGrid account
       },
       replyTo: input.email,
       subject: `New Contact Form Submission: ${input.subject}`,

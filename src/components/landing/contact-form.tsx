@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -15,12 +16,18 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import {
-  ContactFormData,
-  ContactFormSchema,
-  sendContactEmail,
-} from '@/ai/flows/send-contact-email';
+import { sendContactEmail } from '@/ai/flows/send-contact-email';
 import { useState } from 'react';
+
+export const ContactFormSchema = z.object({
+  name: z.string().describe('The name of the person sending the message.'),
+  email: z.string().email().describe('The email address of the sender.'),
+  subject: z.string().describe('The subject of the message.'),
+  message: z.string().describe('The content of the message.'),
+});
+
+export type ContactFormData = z.infer<typeof ContactFormSchema>;
+
 
 export function ContactForm() {
   const { toast } = useToast();
