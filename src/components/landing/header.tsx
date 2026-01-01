@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Rocket } from "lucide-react";
@@ -36,8 +38,12 @@ export function Header() {
           </nav>
           <div className="flex items-center gap-2">
             <ThemeToggle />
-            <Button variant="ghost">Login</Button>
-            <Button>Sign Up</Button>
+            <Button asChild variant="ghost">
+              <a href="https://dev-app.pilottesters.com/#/login" target="_blank" rel="noopener noreferrer">Login</a>
+            </Button>
+            <Button asChild>
+              <a href="https://dev-app.pilottesters.com/#/signup" target="_blank" rel="noopener noreferrer">Sign Up</a>
+            </Button>
           </div>
         </div>
 
@@ -73,8 +79,12 @@ export function Header() {
                         <div className="flex justify-center mb-4">
                           <ThemeToggle />
                         </div>
-                        <Button variant="ghost">Login</Button>
-                        <Button>Sign Up</Button>
+                        <Button asChild variant="ghost">
+                            <a href="https://dev-app.pilottesters.com/#/login" target="_blank" rel="noopener noreferrer">Login</a>
+                        </Button>
+                        <Button asChild>
+                            <a href="https://dev-app.pilottesters.com/#/signup" target="_blank" rel="noopener noreferrer">Sign Up</a>
+                        </Button>
                     </div>
                 </div>
                 </SheetContent>
