@@ -39,10 +39,10 @@ export function Header() {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <Button asChild variant="ghost">
-              <a href="https://dev-app.pilottesters.com/#/login">Login</a>
+              <a href="https://dev-app.pilottesters.com/#/login" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
             <Button asChild>
-              <a href="https://dev-app.pilottesters.com/#/signup">Sign Up</a>
+              <a href="https://dev-app.pilottesters.com/#/signup" target="_blank" rel="noopener noreferrer">Sign Up</a>
             </Button>
           </div>
         </div>
@@ -80,10 +80,10 @@ export function Header() {
                           <ThemeToggle />
                         </div>
                         <Button asChild variant="ghost">
-                            <a href="https://dev-app.pilottesters.com/#/login">Login</a>
+                            <a href="https://dev-app.pilottesters.com/#/login" target="_blank" rel="noopener noreferrer">Login</a>
                         </Button>
                         <Button asChild>
-                            <a href="https://dev-app.pilottesters.com/#/signup">Sign Up</a>
+                            <a href="https://dev-app.pilottesters.com/#/signup" target="_blank" rel="noopener noreferrer">Sign Up</a>
                         </Button>
                     </div>
                 </div>
